@@ -61,7 +61,7 @@ const App = {
     // this is the grid part below
     this.grid.forEach((row, rowIndex) => {
       const rowContainer = document.createElement('div');
-      rowContainer.style.height = '${this.cellHeight}px';
+      rowContainer.style.height = `${this.cellHeight}px`;
       row.forEach((cell, colIndex) => {
         const element = cell.toHtml();
         element.addEventListener('click', () => this.changeColor(rowIndex, colIndex));
