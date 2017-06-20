@@ -37,6 +37,9 @@ const App = {
       btn.addEventListener('click', () => this.setColor(newColor));
     });
   },
+  setColor: function(newColor){
+    this.selectedColor = newColor;
+  },
 
   changeColor: function(rowIndex, colIndex){
     const cell = this.grid[rowIndex][colIndex];
